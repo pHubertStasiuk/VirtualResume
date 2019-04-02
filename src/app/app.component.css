@@ -1,0 +1,19 @@
+.header {
+  display: none;
+  background-color: red;
+}
+
+
+@media (max-width: 600px)
+{
+    .header{
+        display: block;
+        background-color: yellow;
+        -webkit-animation-name: fadeInDown;
+        animation-name: fadeInDown;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+}
