@@ -1,0 +1,116 @@
+
+.bg-img {
+  background: url(/assets/img/back4.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+
+  z-index: 99999;
+
+}
+.bg-img:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+p {
+  font-size: 13px !important;
+}
+
+.profile-picture {
+  margin-top: 80px;
+  width: 180px;
+  border: 3px solid gray;
+}
+
+.profession-line {
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, .75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  color: #428bca;
+}
+
+.social {
+  color: whitesmoke !important;
+  font-weight: 500px !important;
+  font-size: 21px;
+}
+.social:hover {
+  color: #428bca !important;
+}
+
+.btn {
+  box-shadow: 0 .1875rem .1875rem 0 rgba(0,0,0,.1) !important;
+  padding: 1.25rem 2rem;
+  font-family: 'Varela Round';
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  border: 2px solid #ffffff;
+}
+
+.btn:hover {
+  color: #428bca !important;
+  border: 2px solid #428bca;
+}
+
+
+.profile {
+  font-weight: 400px !important;
+  font-size: 25px;
+}
+/* Animation */
+.typer {
+  animation: typer 5s steps(44) 1s 1 normal both, blinkTextCursor 800ms steps(44) infinite normal;
+}
+@keyframes typer {
+  from {
+    width: 0;
+ }
+  to {
+    width: 18em;
+ }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, .75);
+ }
+  to {
+    border-right-color: transparent;
+ }
+}
+
+/* Simple CSS3 Fade-in Animation */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fadeIn {
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+.fadeIn.delay {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
