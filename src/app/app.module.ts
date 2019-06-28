@@ -15,6 +15,9 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HomeSkillsComponent } from './components/home/home-skills/home-skills.component';
+import { ChartModule } from 'primeng/chart';
+
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -39,6 +42,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     RouterModule,
     ParticlesModule,
     HttpClientModule,
+    ChartModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

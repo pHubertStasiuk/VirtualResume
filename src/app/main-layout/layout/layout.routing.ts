@@ -13,4 +13,5 @@ export const LayoutRoutes: Routes = [
   { path: 'contact-me', component: ContactComponent },
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'skills', component: SkillsComponent },
+  { path : 'experience', component: ExperienceComponent}
 ];

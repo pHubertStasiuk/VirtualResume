@@ -7,14 +7,8 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'VirtualResume';
 
   constructor(private translate: TranslateService) {
-    translate.setDefaultLang('en');
+    this.translate.setDefaultLang('en');
   }
-
-  switchLanguage(language: string) {
-    this.translate.use(language);
-  }
-
 }
